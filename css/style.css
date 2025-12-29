@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* HEADER & NAV */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.nav a {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #1a1a1a;
+}
+
+.nav-cta {
+    font-weight: 600;
+    color: #2563eb;
+}
+
+/* SECTIONS */
+.section {
+    padding: 72px 0;
+}
+
+.section.alt {
+    background-color: #f9fafb;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+/* HERO */
+.hero h1 {
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 16px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.hero-meta {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 32px;
+}
+
+.about-text p {
+    max-width: none;
+}
+
+/* GRIDS */
+.expertise-grid,
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+}
+
+/* EXPERIENCE */
+.experience {
+    margin-bottom: 40px;
+}
+
+.period {
+    font-size: 14px;
+    color: #555;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* PROJECTS */
+.project-list li {
+    margin-bottom: 12px;
+}
+
+/* CONTACT */
+.contact {
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 6px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 32px;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
